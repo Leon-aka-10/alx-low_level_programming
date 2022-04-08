@@ -11,7 +11,7 @@ int main(void)
 
 	for (a = 0; a < 24; a++)
 	{
-		purchar(alpha[a]);
+		putchar(alpha[a]);
 	}
 	putchar('\n');
 	return (0);

@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int n,m;
+	int n, m;
 	m = n % 10;
 
 	if (m > 5)

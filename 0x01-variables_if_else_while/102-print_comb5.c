@@ -20,11 +20,11 @@ int main(void)
 					eqn2 = (a * 10 ) + d;
 					if (eqn1 < eqn2)
 					{
-						putchar(c);
-						putchar(b);
-						putchar(' ');
-						putchar(a);
 						putchar(d);
+						putchar(c);
+						putchar(' ');
+						putchar(b);
+						putchar(a);
 						if (a == 57 && b == 56 && c == 57 && d == 57)
 						{
 							break;

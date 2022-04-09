@@ -17,7 +17,7 @@ int main(void)
 				for (d = 48; d < 58; d++)
 				{
 					eqn1 = (c * 10 ) + b;
-					eqn1 = (a * 10 ) + d;
+					eqn2 = (a * 10 ) + d;
 					if (eqn1 < eqn2)
 					{
 						putchar(c);

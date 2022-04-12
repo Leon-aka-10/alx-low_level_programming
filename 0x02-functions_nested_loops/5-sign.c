@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
  * print_sign - Determines if the input number
- * greater, equal or less than zero.   
+ * greater, equal or less than zero.
  *
  * @n: The input number as an integer.
  *
@@ -25,4 +26,5 @@ int print_sign(int n)
 		_putchar(48);
 		return (0);
 	}
+	_putchar('\n');
 }

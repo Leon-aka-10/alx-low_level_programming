@@ -13,7 +13,7 @@ int main(void)
 	n1 = 1;
 	n2 = 2;
 	bool1 = bool2 = 1;
-	printf("%ld, %ld", n1 n2);
+	printf("%ld, %ld", n1, n2);
 	for (a = 0; a < 96; a++)
 	{
 		if (bool1)

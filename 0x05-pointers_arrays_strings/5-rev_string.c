@@ -12,10 +12,8 @@ void rev_string(char *s)
 	char temp;
 
 
-	while (s[length] != '\0')
-	{
-		length++;
-	}
+	for (length = 0; s[length] != '\0'; length++)
+	;
 
 	a = 0;
 	div = length / 2;

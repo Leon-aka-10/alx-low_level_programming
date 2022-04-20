@@ -10,9 +10,9 @@ void print_rev(char *s)
 {
 	int a = 0;
 
-	while (str[a])
+	while (s[a])
 	{
-		_putchar(str[a]);
+		_putchar(s[a]);
 		a--;
 	}
 	_putchar('\n');

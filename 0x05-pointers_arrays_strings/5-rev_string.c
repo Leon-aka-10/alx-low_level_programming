@@ -20,8 +20,7 @@ void rev_string(char *s)
 
 	while (div--)
 	{
-		temp = s[length - (a - 1)];
-		s[length - (a - 1)] = s[a];
+		temp = s[length - a - 1];
 		s[a] = temp;
 		a++;
 	}

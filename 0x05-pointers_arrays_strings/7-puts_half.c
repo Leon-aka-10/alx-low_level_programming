@@ -22,7 +22,7 @@ void puts_half(char *str)
 	{
 		a = len / 2;
 	}
-	else 
+	else
 	{
 		a = (len - 1) / 2;
 	}

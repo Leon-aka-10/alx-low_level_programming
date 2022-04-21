@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
  * main - Prints numbers between 00 to 99.
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int a, b, c, d, eqn1, eqn2;
@@ -16,15 +18,15 @@ int main(void)
 			{
 				for (d = 48; d < 58; d++)
 				{
-					eqn1 = (c * 10 ) + b;
-					eqn2 = (a * 10 ) + d;
+					eqn1 = (c * 10) + b;
+					eqn2 = (a * 10) + d;
 					if (eqn1 < eqn2)
 					{
-						putchar(d);
 						putchar(c);
-						putchar(' ');
 						putchar(b);
+						putchar(' ');
 						putchar(a);
+						putchar(d);
 						if (a == 57 && b == 56 && c == 57 && d == 57)
 						{
 							break;

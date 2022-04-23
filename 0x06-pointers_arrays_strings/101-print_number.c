@@ -21,7 +21,15 @@ void print_number(int n)
 	}
 	j = i;
 
-	for (num = 1; j > 9; j /= 10; num *= 10; num >= 1; num /= 10)
+	j = i;
+	num = 1;
+
+	for (; j > 9;  j /= 10)
+	{
+		num *= 10;
+	}
+
+	for (; num >= 1; num /= 10)
 	{
 		_putchar(((i / num) % 10) + '0');
 	}

@@ -9,7 +9,7 @@
 char *cap_string(char *s)
 {
 	int i, num;
-	int sep_of_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	if (s[num] >= 'a' && s[num] <= 'z')
 	{
@@ -20,7 +20,7 @@ char *cap_string(char *s)
 	{
 		for (i = 0; i < 13; i++)
 		{
-			if (s[num] == sep_of_words[i])
+			if (s[num] == sep_words[i])
 			{
 				if ((s[num + 1] >= 'a') && (s[num + 1] <= 'z'))
 				{

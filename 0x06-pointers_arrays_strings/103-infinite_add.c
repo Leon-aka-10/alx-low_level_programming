@@ -43,7 +43,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			num1 = 0;
 		if (x2 > 0)
-			 x2--, num2 = n2[x2] - '0';
+			x2--, num2 = n2[x2] - '0';
 		else
 			num2 = 0;
 		temp--, size_r--;

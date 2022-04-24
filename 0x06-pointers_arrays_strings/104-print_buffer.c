@@ -25,7 +25,6 @@ void print_buffer(char *b, int size)
 					printf("%.2x:", b[y]);
 				else
 					printf(" ");
-				printf(" ");
 			}
 			printf(" ");
 			for (z = x; z < x + 10; z++)

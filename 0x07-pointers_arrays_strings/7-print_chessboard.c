@@ -8,7 +8,7 @@
 
 void print_chessboard(char (*a)[8])
 {
-	unsigned int x, y, = 0;
+	unsigned int x, y = 0;
 
 	for (x = 0; x < 64; x++)
 	{

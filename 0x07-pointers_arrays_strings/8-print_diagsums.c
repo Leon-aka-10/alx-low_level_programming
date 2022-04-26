@@ -24,5 +24,5 @@ void print_diagsums(int *a, int size)
 			add2 += a[x];
 		}
 	}
-	printf ("%d, %d\n", add1, add2);
+	printf("%d, %d\n", add1, add2);
 }

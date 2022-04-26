@@ -13,13 +13,13 @@ void print_diagsums(int *a, int size)
 {
 	int x,  add1 = 0, add2 = 0;
 
-	for (x = 0; x < pow(size, 2); x++)
+	for (x = 0; x < size * size; x++)
 	{
 		if (x % (size + 1) == 0)
 		{
 			add1 += a[x];
 		}
-		if (x % (size - 1) == 0 && x != 0 && x < pow(size, 2) - 1)
+		if (x % (size - 1) == 0 && x != 0 && x < size * size - 1)
 		{
 			add2 += a[x];
 		}

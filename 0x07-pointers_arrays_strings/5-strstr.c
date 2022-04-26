@@ -18,9 +18,10 @@ char *_strstr(char *haystack, char *needle)
 	{
 		shaystack = haystack;
 		tneedle = needle;
-		for (; *haystack != '\0' && *tneedle != '\0' && *haystack == *tneedle; haystack++)
+		for (; *haystack != '\0' && *tneedle != '\0' && *haystack == *tneedle)
 		{
 			tneedle++;
+			haystack++;
 		}
 		if (!*tneedle)
 		{

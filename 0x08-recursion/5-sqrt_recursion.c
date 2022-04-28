@@ -16,10 +16,7 @@ int _sqrt_recursion(int n)
 	{
 		return (1);
 	}
-	else
-	{
-		return (power_operation(n, 2));
-	}
+	return (power_operation(n, 2));
 }
 
 /**

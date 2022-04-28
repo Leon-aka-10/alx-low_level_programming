@@ -18,17 +18,17 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (_pow(n, 2));
+		return (power_operation(n, 2));
 	}
 }
 
 /**
- * _pow - returns the natural square root of a number.
+ * power_operation - returns the natural square root of a number.
  * @n: input number.
  * @a: iterator.
  * Return: square root or -1.
  */
-int _pow(int n, int a)
+int power_operation(int n, int a)
 {
 	if (a % (n / a) == 0)
 	{
@@ -41,5 +41,5 @@ int _pow(int n, int a)
 			return (-1);
 		}
 	}
-	return (_pow(n, a + 1));
+	return (0 + power_operation(n, a + 1));
 }

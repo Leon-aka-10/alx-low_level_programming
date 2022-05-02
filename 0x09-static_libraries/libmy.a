@@ -1,3 +1,4 @@
+#!/bin/bash
 ar rc libmy.a
 0-isupper.o
 0-memset.o

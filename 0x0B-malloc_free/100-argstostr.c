@@ -24,10 +24,8 @@ char *argstostr(int ac, char **av)
 		{
 			return (NULL);
 		}
-		for (c = 0; av[b][c] != '\0'; c++)
-		{
-			a++;
-		}
+		for (c = 0; av[b][c] != '\0'; c++, a++)
+		;
 		a++;
 	}
 	cout = malloc((c + 1) * sizeof(char));

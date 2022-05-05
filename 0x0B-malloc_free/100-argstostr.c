@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for (a = b = 0; b < ac; b++, a++)
+	for (a = b = 0; b < ac; b++)
 	{
 		if (av[b] == NULL)
 		{
@@ -26,6 +26,7 @@ char *argstostr(int ac, char **av)
 		}
 		for (c = 0; av[b][c] != '\0'; c++, a++)
 		;
+		a++;
 	}
 	cout = malloc((c + 1) * sizeof(char));
 	if (cout == NULL)

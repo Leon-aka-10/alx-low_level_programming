@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	for (m = 0; *(str + m) != '\0'; m++)
 		;
 	
-	cout = (char *)(m + 1) * malloc(sizeof(char));
+	cout = (char *)malloc(sizeof(char) * (m + 1));
 	if (cout == NULL)
 	{
 		return (NULL);

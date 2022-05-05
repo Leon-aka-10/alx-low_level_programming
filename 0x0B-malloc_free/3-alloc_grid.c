@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	cout = malloc(sizeof(int *) * height);
+	cout = malloc(height * sizeof(int *));
 	if (cout == NULL)
 	{
 		free(cout);
@@ -26,7 +26,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (m = 0; m < height; m++)
 	{
-		*(cout + m) = malloc(size(int) * width);
+		*(cout + m) = malloc(width * sizeof(int));
 		if (*(cout + m) == NULL)
 		{
 			while (m >= 0)
@@ -39,9 +39,12 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	for (m = 0, n = 0; m < height, n < width; m++, n++)
+	for (m = 0; m < height; m++)
 	{
-		cout[m][n] = 0;
+		for (n = 0; n < width; n++)
+		{
+			cout[m][n] = 0;
+		}
 	}
 	return (cout);
 }

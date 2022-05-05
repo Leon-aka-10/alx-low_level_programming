@@ -55,7 +55,7 @@ char **strtow(char *str)
 				if (str[a] != ' ' && (str[a + 1] == ' ' || str[a + 1] == '\0'))
 				{
 					cout[b] = malloc((a - d + 2) * sizeof(char));
-					if (cout[b] = NULL)
+					if (cout[b] == NULL)
 					{
 						ch_free_grid(cout, b);
 						return (NULL);
@@ -64,13 +64,11 @@ char **strtow(char *str)
 				}
 			}
 			for (c = 0; d <= a; d++, c++)
-			{
 				cout[b][c] = str[d];
-			}
 			cout[b][c] = '\0';
 		}
 		cout[b] = NULL;
+
 		return (cout);
-		        
 	}
 }

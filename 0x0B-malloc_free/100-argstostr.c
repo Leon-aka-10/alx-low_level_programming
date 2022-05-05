@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 		;
 		a++;
 	}
-	cout = malloc((c + 1) * sizeof(char));
+	cout = malloc((a + 1) * sizeof(char));
 	if (cout == NULL)
 	{
 		free(cout);

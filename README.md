@@ -1,1 +1,1 @@
-Low level language and algorithms
+Aim is to have an understanding on function pointers

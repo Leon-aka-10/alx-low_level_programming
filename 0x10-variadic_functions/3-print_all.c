@@ -10,14 +10,11 @@
 void print_all(const char * const format, ...)
 {
 	va_list alpnumlist;
-	unsigned int a, b, c = 0;
+	unsigned int a = 0, b, c = 0;
 	char *str;
 	const char all_arg[] = "cifs";
 
 	va_start(alpnumlist, format);
-
-	a = 0;
-
 	while (format && format[a])
 	{
 		b = 0;

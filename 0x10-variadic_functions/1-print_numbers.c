@@ -12,6 +12,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list numlist;
 	unsigned int a;
+	int numbers;
 
 	va_start(numlist), n;
 	numbers = va_arg(numlist, int);

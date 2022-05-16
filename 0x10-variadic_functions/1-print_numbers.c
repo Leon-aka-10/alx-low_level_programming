@@ -22,8 +22,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", numbers);
 		a++;
-		if (seperator && a < n - 1)
-			printf("%s", seperator);
+		if (separator && a < n - 1)
+			printf("%s", separator);
 	}
 	printf("\n");
 

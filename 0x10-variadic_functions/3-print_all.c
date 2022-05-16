@@ -18,6 +18,7 @@ void print_all(const char * const format, ...)
 	while (format && format[a])
 	{
 		b = 0;
+
 		while (all_arg[b])
 		{
 			if (format[a] == all_arg[b] && c)
@@ -30,16 +31,16 @@ void print_all(const char * const format, ...)
 		switch (format[a])
 		{
 		case 'c':
-			printf("%c", va_arg(alpnumlist, char));
+			printf("%c", va_arg(alpnumlist, char)), c = 1;
 			break;
 		case 'i':
-			printf("%d", va_arg(alpnumlist, int));
+			printf("%d", va_arg(alpnumlist, int)), c = 1;
 			break;
 		case 'f':
-			printf("%f", va_arg(alpnumlist, float));
+			printf("%f", va_arg(alpnumlist, float)), c = 1;
 			break;
 		case 's':
-			str = va_arg(alpnumlist, char *);
+			str = va_arg(alpnumlist, char *), c = 1;
 
 			if (str)
 			{

@@ -9,15 +9,21 @@
 int pop_listint(listint_t **head)
 {
 	int headnode;
+	listint_t *h;
 	listint_t *temp;
 
 	if (*head == NULL)
 		return (0);
 
 	temp = *head;
+
 	headnode = temp->n;
-	*head = temp->next;
+
+	*h = temp->next;
+
 	free(temp);
+
+	*head = h;
 
 	return (headnode);
 }

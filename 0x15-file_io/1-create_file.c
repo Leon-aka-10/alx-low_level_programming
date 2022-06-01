@@ -21,14 +21,17 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 
-	if (text_context == NULL)
-		text_context = "";
+	if (text_content == NULL)
+		text_content = "";
 
 	letters = 0;
-	while (text_context[letters])
+	while (text_content[letters])
 		letters++;
 
-	wr = write(fd, text_context, letters);
+	wr = write(fd, text_content, letters);
+
+	if (wr == -1)
+		return (-1);
 
 	close(fd);
 	return (1);
